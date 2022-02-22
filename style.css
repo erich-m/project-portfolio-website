@@ -1,0 +1,50 @@
+html, body {
+  /*#023047 or #1C0475*/
+  background-color: #1C0475;
+  overflow-x : hidden;
+  margin : 0px;
+  padding : 0px;
+}
+
+
+
+@font-face {
+  font-family: "headerFont";
+  src: url("assets/headerfont.ttf");
+
+  
+}
+
+.header {
+  font-family: "headerFont";
+  
+  height : 10vh;
+  width : 100%;
+
+  padding : 0;
+  margin : 0;
+
+  background-color : #ED0C4C;
+
+}
+
+table {
+  table-layout : fixed;
+  width : 100%;
+}
+
+td{
+  width : 33.3333%;
+}
+
+.col1 {
+  color : #C0F20A;
+  position : absolute;
+  text-align : center;
+}
+
+.col3 {
+  color : #C0F20A;
+  position : absolute;
+  text-align : center;
+}
