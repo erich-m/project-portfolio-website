@@ -6,20 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erich M : Web Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <script src="libraries/p5.js"></script>
+  
+  <script src="functions/htmlFunctions.js"></script>
 </head>
-
-<div class="header">
-  <div class="headLeft">
-    <div class="textBox">
-      Erich MacLean
+<body>
+  <div class="header" id="header">
+    <div class="headLeft">
+      <button class="headButt" onclick="toTop()" id="toTop">
+        Erich MacLean
+      </button>
+    </div>
+    <div class="headRight">
+      <div class="dropdown" style="float:right;">
+        <button class="dropbtn">Links</button>
+        <div class="dropdown-content">
+          <a class="regDropDown" href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ferich-maclean-575549193%2F&sa=D&sntz=1&usg=AFQjCNGCb5_JEHc0x5lQ8oeT2eixRpoZBg">
+            LinkedIn
+          </a>
+          <a class="regDropDown" href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Ferich-m&sa=D&sntz=1&usg=AFQjCNG01h1cFW6tBpSl15kHP4Vn1Iwqkw">
+            Github
+          </a>
+          <a class="lastDropDown" href="https://www.youtube.com/channel/UCjSZ4Wy1jOOFke8JVscgO-w/featured">
+            Youtube
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="headRight">
-    <div class="textBox">
-      Links
-    </div>
-  </div>
-</div>
+  <div class="mainPage" id="mainPage">
 
+    <canvas class="nameDisplayCanvas" id="nameDisplayCanvas"></canvas>
+    <script src="main.js"></script>
+  </div>
+</body>
 </html> 
