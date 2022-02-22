@@ -1,18 +1,31 @@
+:root {
+  /* Color Scheme A */
+  --background-color : #1C0475;
+  --back-accent : #ED0C4C;
+  --contrast-text : #C0F20A;
+  --dark-text : #A0CC02;
+  --light-accent : #8BA820;
+
+  /* Color Scheme B */
+  /* --background-color : #023047;
+  --back-accent : #ffb703;
+  --contrast-text : #219ebc;
+  --dark-text : #fb8500;
+  --light-accent : #8ecae6; */
+}
+
+
 html, body {
-  /*#023047 or #1C0475*/
-  background-color: #1C0475;
+  background-color: var(--background-color);
   overflow-x : hidden;
   margin : 0px;
   padding : 0px;
 }
 
 
-
 @font-face {
   font-family: "headerFont";
   src: url("assets/headerfont.ttf");
-
-  
 }
 
 .header {
@@ -24,27 +37,43 @@ html, body {
   padding : 0;
   margin : 0;
 
-  background-color : #ED0C4C;
-
+  background-color : var(--back-accent);
 }
 
-table {
-  table-layout : fixed;
-  width : 100%;
-}
-
-td{
-  width : 33.3333%;
-}
-
-.col1 {
-  color : #C0F20A;
+.headLeft{
+  color : var(--contrast-text);
   position : absolute;
-  text-align : center;
+  top : 0;
+  left : 0;
+
+  width : 33.33333%;
+  height : 10vh;
+
+  padding : 0;
+  margin : 0;
 }
 
-.col3 {
-  color : #C0F20A;
+.headRight{
+  color : var(--contrast-text);
   position : absolute;
+  top : 0;
+  left : 66.66666%;
+
+  width : 33.33333%;
+  height : 10vh;
+
+  padding : 0;
+  margin : 0;
+}
+
+.textBox{
+  color : inherit;
+  position : absolute;
+  top : 50%;
+  left : 50%;
+
   text-align : center;
+  transform : translate(-50%,-50%);
+
+  font-size : clamp(0rem,1.7vw,20rem);
 }
