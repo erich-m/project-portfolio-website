@@ -38,7 +38,7 @@ function draw(){
 		strokeWeight(10);
 		stroke(0);
 		ellipse(center.x,center.y,r*2,r*2);
-		counter++;
+		counter+=0.5;
 
 		fill(0);
 		stroke(textColor);
