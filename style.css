@@ -48,6 +48,7 @@ html, body {
   margin : 0;
 
   background-color : var(--back-accent);
+  z-index : 99;
 }
 
 .headLeft{
@@ -147,7 +148,7 @@ button {
   left : 50%;
   
   text-align : center;
-  transform : translate(-50%,15%);
+  transform : translate(-50%,20%);
   
   font-size : clamp(0rem,1.5vw,20rem);
 }
@@ -166,7 +167,6 @@ button {
   border : var(--dark-text) solid;
   padding : 5px;
 }
-
 
 .dropdown-content a:hover{
   background-color : var(--light-accent);
