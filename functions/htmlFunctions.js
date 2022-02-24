@@ -3,3 +3,6 @@ function toTop(){
 	document.documentElement.scrollTop = 0;
 	// console.log(true);
 }
+function preload(){
+	
+}

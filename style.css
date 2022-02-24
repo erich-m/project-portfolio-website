@@ -1,19 +1,10 @@
 :root {
-  /* Color Scheme A */
-  --background-color : #1C0475;
-  --back-accent : #ED0C4C;
-  --back--accent-offset : #8b1235;
-  --contrast-text : #C0F20A;
-  --dark-text : #A0CC02;
-  --light-accent : #8BA820;
-
-  /* Color Scheme B */
-  /* --background-color : #023047;
-  --back-accent : #ffb703;
-  --back--accent-offset : #a1760a;
-  --contrast-text : #219ebc;
-  --dark-text : #fb8500;
-  --light-accent : #8ecae6; */
+  --background-color : black;
+  --back-accent : black;
+  --back--accent-offset : black;
+  --contrast-text : black;
+  --dark-text : black;
+  --light-accent : black;
 }
 
 

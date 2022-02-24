@@ -13,6 +13,28 @@ let center, r;
 
 function preload(){
 	nameFont = loadFont("assets/headerfont.ttf");
+
+	let data = document.querySelector(':root');
+
+	let r = round(random(0,1));
+
+	if(r == 0){
+		/* Color Scheme A */
+		data.style.setProperty('--background-color','#1C0475');
+		data.style.setProperty('--back-accent','#ED0C4C');
+		data.style.setProperty('--back--accent-offset','#8b1235');
+		data.style.setProperty('--contrast-text','#C0F20A');
+		data.style.setProperty('--dark-text','#A0CC02');
+		data.style.setProperty('--light-accent','#8BA820');
+	}else{
+		/* Color Scheme B */
+		data.style.setProperty('--background-color','#02273a');
+		data.style.setProperty('--back-accent','#ffb703');
+		data.style.setProperty('--back--accent-offset','#a1760a');
+		data.style.setProperty('--contrast-text','#20c2eb');
+		data.style.setProperty('--dark-text','#fb8500');
+		data.style.setProperty('--light-accent','#8ecae6');
+	}
 }
 
 function setup() {
