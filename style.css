@@ -300,6 +300,16 @@ img {
   max-width : 90%;
 }
 
+.halfImageIgnoreTopHeight{
+  border : black 3px solid;
+  width : auto;
+  margin-left : 5%;
+  margin-right : 5%;
+  margin-bottom : 5%;
+  max-height : 75vh;
+  max-width : 90%;
+}
+
 .halfImageContainer{
   width : 90%;
   display : flex;
@@ -319,6 +329,16 @@ img {
   width : auto;
   margin-left : 5%;
   margin-right : 5%;
+  max-height : 75vh;
+  max-width : 90%;
+}
+
+.fullImageIgnoreTopHeight{
+  border : black 3px solid;
+  width : auto;
+  margin-left : 5%;
+  margin-right : 5%;
+  margin-bottom : 5%;
   max-height : 75vh;
   max-width : 90%;
 }

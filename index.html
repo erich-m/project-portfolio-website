@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Erich M : Web Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="libraries/p5.js"></script>
@@ -44,7 +44,7 @@
 
   <hr class="whitespace">
 
-  <div class="contentStyleA" id="content20">
+  <div class="contentStyleA" id="content21">
     <div class="row" id="centerRow">
       <div class="column">
         <h1>
@@ -76,7 +76,7 @@
       </div>
       <div class="column" id="centerItems">
         <div class="halfImageContainer">
-          <img class="halfImage" src="assets/project/space.jpg" alt="Screenshot of the SpaceShare Webpage"></img>
+          <img class="halfImageIgnoreTopHeight" src="assets/project/space.jpg" alt="Screenshot of the SpaceShare Webpage"></img>
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
     <hr class="regBreakA">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content19">
+  <div class="contentStyleB" id="content20">
     <div class="row" id="centerRow">
       <div class="column">
         <h1>
@@ -101,7 +101,7 @@
     </div>
     <div class="row" id="centerRow">
       <div class="column">
-        <img class="halfImage" src="assets/project/mem.jpg" alt="Screenshot of the MemoryMaster Webpage"></img>
+        <img class="halfImageIgnoreTopHeight" src="assets/project/mem.jpg" alt="Screenshot of the MemoryMaster Webpage"></img>
         <ul>
           Skills:
           <li>Javascript (p5.js Libraries)</li>
@@ -129,7 +129,7 @@
     <hr class="regBreakB">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content18">
+  <div class="contentStyleB" id="content19">
     <div class="row" id="centerRow">
       <div class="column">
         <h1>
@@ -154,7 +154,7 @@
         <ul>
           Skills:
           <li>ARM Assembly Language</li>
-          <li>Hardware</li>
+          <li>Hardware Design</li>
           <li>Technical Writing</li>
         </ul>
         <ul>
@@ -178,7 +178,7 @@
       </div>
       <div class="column" id="centerItems">
         <div class="halfImageContainer">
-          <img class="halfImage" src="assets/project/circuit.jpg" alt="Image of Seven Segment Display"></img>
+          <img class="halfImageIgnoreTopHeight" src="assets/project/circuit.jpg" alt="Image of Seven Segment Display"></img>
         </div>
       </div>
     </div>
@@ -188,7 +188,7 @@
     <hr class="regBreakB">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content17">
+  <div class="contentStyleB" id="content18">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
@@ -202,23 +202,13 @@
       </div>
     </div>
     <div class="row" id="centerRow">
-      <h3>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        As a short summer project, I designed a gyroscopic model in Solidworks.
-        I then used the Photoview 360 addin to create a high quality render of the model with advanced lighting simulations.
-        The animated clip of the model took around 12 hours to render!
-      </h3>
-    </div>
-    <div class="row" id="centerRow">
-      <div class="fullImageContainer">
-        <video class="fullImage" src="assets/project/light.mp4" alt="3D gyroscopic model" autoplay muted loop controlsList="nodownload"></video>
-      </div>
-    </div>
-    <div class="row" id="centerRow">
       <div class="column" id="centerItems">
-        <div class="fullImageContainer">
-          <img class="fullImage" src="assets/project/3d5.JPG" alt="3D gyroscopic model"></img>
-        </div>
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          As a short summer project, I designed a gyroscopic model in Solidworks.
+          I then used the Photoview 360 addin to create a high quality render of the model with advanced lighting simulations.
+          The animated clip of the model took around 12 hours to render!
+        </h3>
       </div>
       <div class="column" id="centerItems">
         <ul>
@@ -229,13 +219,25 @@
         </ul>
       </div>
     </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImage" src="assets/project/3d5.JPG" alt="3D gyroscopic model"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <video class="halfImage" src="assets/project/light.mp4" alt="3D gyroscopic model" autoplay muted loop controlsList="nodownload"></video>
+        </div>
+      </div>
+    </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
   <div class="breakContainerB">
     <hr class="regBreakB">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content16">
+  <div class="contentStyleA" id="content17">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
@@ -249,11 +251,24 @@
       </div>
     </div>
     <div class="row" id="centerRow">
-      <video class="fullImage" src="assets/project/kkt0.mp4" alt="3D caterpillar toy" controls poster="assets/project/kktcover.jpg" controlsList="nodownload"></video>
+      <div class="fullImageContainer">
+        <video class="fullImageIgnoreTopHeight" src="assets/project/kkt0.mp4" alt="3D caterpillar toy" controls poster="assets/project/kktcover.jpg" controlsList="nodownload"></video>
+      </div>
     </div>
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
-        <video class="halfImage" src="assets/project/kkt1.mp4" alt="3D caterpillar toy (colored)" controls poster="assets/project/kktcover1.jpg" muted controlsList="nodownload"></video>
+        <video class="halfImageIgnoreTopHeight" src="assets/project/kkt1.mp4" alt="3D caterpillar toy (colored)" controls poster="assets/project/kktcover1.jpg" muted controlsList="nodownload"></video>
+      </div>
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          For this project, my team and I had to prove, design, and develop a Kinetic Kinder toy. 
+          This also included business elements as well, such as budgeting, marketing and material analysis. 
+          We then had to pitch our idea to the professor and a teaching assistant. 
+          My contribution was the design production and animation, and I had significant input into the financial element of this project. 
+          In the video above, you will see the toy in a Kinder capsule, it being put together, and the gearing mechanism and driving. 
+          The left video is a clip of one of our marketing ideas that no one else included in their pitch.
+        </h3>
         <ul>
           Skills:
           <li>3D Modelling (Solidworks)</li>
@@ -284,25 +299,14 @@
           </li>
         </ul>
       </div>
-      <div class="column" id="centerItems">
-        <h3>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          For this project, my team and I had to prove, design, and develop a Kinetic Kinder toy. 
-          This also included business elements as well, such as budgeting, marketing and material analysis. 
-          We then had to pitch our idea to the professor and a teaching assistant. 
-          My contribution was the design production and animation, and I had significant input into the financial element of this project. 
-          In the video above, you will see the toy in a Kinder capsule, it being put together, and the gearing mechanism and driving. 
-          The left video is a clip of one of our marketing ideas that no one else included in their pitch.
-        </h3>
-      </div>
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="breakContainerB">
-    <hr class="regBreakB">
+  <div class="breakContainerA">
+    <hr class="regBreakA">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content15">
+  <div class="contentStyleB" id="content16">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
@@ -317,7 +321,9 @@
     </div>
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
-        <video class="halfImage" src="assets/project/grip.mp4" alt="Gripper Model Animation" controls poster="assets/project/gripcover.jpg" muted controlsList="nodownload"></video>
+        <div class="halfImageContainer">
+          <video class="halfImageIgnoreTopHeight" src="assets/project/grip.mp4" alt="Gripper Model Animation" controls poster="assets/project/gripcover.jpg" muted controlsList="nodownload"></video>
+        </div>
       </div>
       <div class="column" id="centerItems">
         <h3>
@@ -338,7 +344,7 @@
     <hr class="regBreakB">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleA" id="content14">
+  <div class="contentStyleA" id="content15">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
@@ -352,7 +358,9 @@
       </div>
     </div>
     <div class="row" id="centerRow">
-      <video class="fullImageIgnoreHeight" src="assets/project/re.mp4" alt="3D Lego Model" controls poster="assets/project/recover.jpg" controlsList="nodownload"></video>
+      <div class="fullImageContainer">
+        <video class="fullImageIgnoreHeight" src="assets/project/re.mp4" alt="3D Lego Model" controls poster="assets/project/recover.jpg" controlsList="nodownload"></video>
+      </div>
     </div>
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
@@ -395,18 +403,26 @@
       </div>
       <div class="column" id="centerItems">
         <div class="row" id="centerRow">
-          <img class="halfImage" src="assets/project/re0.jpg" alt="3D Lego Model"></img>
+          <div class="halfImageContainer">
+            <img class="halfImage" src="assets/project/re0.jpg" alt="3D Lego Model"></img>
+          </div>
         </div>
         <div class="row" id="centerRow">
-          <img class="halfImage" src="assets/project/re1.jpg" alt="3D Lego Model"></img>
+          <div class="halfImageContainer">
+            <img class="halfImage" src="assets/project/re1.jpg" alt="3D Lego Model"></img>
+          </div>
         </div>
       </div>
     </div>
     <div class="row" id="centerRow">
-      <img class="fullImageIgnoreHeight" src="assets/project/re3.jpg" alt="3D Lego Model"></img>
+      <div class="fullImageContainer">
+        <img class="fullImageIgnoreHeight" src="assets/project/re3.jpg" alt="3D Lego Model"></img>
+      </div>
     </div>
     <div class="row" id="centerRow">
-      <img class="fullImage" src="assets/project/re2.jpg" alt="3D Lego Model"></img>
+      <div class="fullImageContainer">
+        <img class="fullImage" src="assets/project/re2.jpg" alt="3D Lego Model"></img>
+      </div>
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
@@ -414,7 +430,7 @@
     <hr class="regBreakA">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content13">
+  <div class="contentStyleB" id="content14">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
@@ -445,23 +461,33 @@
         </ul>
       </div>
       <div class="column" id="centerItems">
-        <video class="halfImage" src="assets/project/vsr.Mp4" alt="Variable Sequence Recognizer" controls muted controlsList="nodownload"></video>
+        <div class="halfImageContainer">
+          <video class="halfImageIgnoreTopHeight" src="assets/project/vsr.Mp4" alt="Variable Sequence Recognizer" controls muted controlsList="nodownload"></video>
+        </div>
       </div>
     </div>
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
-        <img class="halfImageIgnoreHeight" src="assets/project/vsr0.jpg" alt="3D Lego Model"></img>
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/vsr0.jpg" alt="3D Lego Model"></img>
+        </div>
       </div>
       <div class="column" id="centerItems">
-        <img class="halfImageIgnoreHeight" src="assets/project/vsr3.jpg" alt="3D Lego Model"></img>
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/vsr3.jpg" alt="3D Lego Model"></img>
+        </div>
       </div>
     </div>
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
-        <img class="halfImage" src="assets/project/vsr2.jpg" alt="3D Lego Model"></img>
+        <div class="halfImageContainer">
+          <img class="halfImage" src="assets/project/vsr2.jpg" alt="3D Lego Model"></img>
+        </div>
       </div>
       <div class="column" id="centerItems">
-        <img class="halfImage" src="assets/project/vsr4.jpg" alt="3D Lego Model"></img>
+        <div class="halfImageContainer">
+          <img class="halfImage" src="assets/project/vsr4.jpg" alt="3D Lego Model"></img>
+        </div>
       </div>
     </div>
   </div>
@@ -470,7 +496,7 @@
     <hr class="regBreakB">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content12">
+  <div class="contentStyleA" id="content13">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
@@ -483,13 +509,66 @@
         </h2>
       </div>
     </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          My contribution to this project included generating the drive design, launch mechanism, completing the motor controller circuitry and Arduino code, and building the 3D assembly in Solidworks. 
+          The project restricted us to only have two motors, so in order to have the launch mechanism and the driving, I aided in designing a way to use one motor for each function. 
+          Using a schematic, I also put the circuit on a breadboard. 
+          I also contributed a significant amount of time toward the Solidworks assembly.
+        </h3>
+        <ul>
+          Skills:
+          <li>Hardware Design</li>
+          <li>Schematics</li>
+          <li>VHDL</li>
+        </ul>
+        <ul>
+          Special Thanks to Team Members
+          <li>
+            <a id="linkColor" href="https://www.linkedin.com/in/jeffreylim201" target="_blank">
+              Jeff L
+            </a>
+          </li>
+          <li>
+            <a id="linkColor" href="https://www.linkedin.com/in/gillianahliu" target="_blank">
+              Gillian L
+            </a>
+          </li>
+          <li>
+            <a id="linkColor" href="https://www.linkedin.com/in/mallory-stephens" target="_blank">
+              Mallory S
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreTopHeight" src="assets/project/tbwc2.jpg" alt="Teddy Bear Wheelchair"></img>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/tbwc1.jpg" alt="Teddy Bear Wheelchair"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/tbwc0.jpg" alt="Teddy Bear Wheelchair"></img>
+        </div>
+      </div>
+    </div>
+    </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="breakContainerB">
-    <hr class="regBreakB">
+  <div class="breakContainerA">
+    <hr class="regBreakA">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content11">
+  <div class="contentStyleB" id="content12">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
@@ -508,10 +587,58 @@
       </h3>>
     </div>
     <div class="row" id="centerRow">
-      <img class="fullImageIgnoreHeight" src="assets/project/ssc0.jpg" alt="2 Point Perspective Drawing"></img>
+      <div class="fullImageContainer">
+        <img class="fullImageIgnoreHeight" src="assets/project/ssc0.jpg" alt="2 Point Perspective Drawing"></img>
+      </div>
     </div>
     <div class="row" id="centerRow">
-      <img class="fullImage" src="assets/project/ssc1.jpg" alt="Summerlee Science Complex"></img>
+      <div class="fullImageContainer">
+        <img class="fullImage" src="assets/project/ssc1.jpg" alt="Summerlee Science Complex"></img>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------ -->
+  <div class="breakContainerB">
+    <hr class="regBreakB">
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------ -->
+  <div class="contentStyleB" id="content11">
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <h1>
+          Minimap
+        </h1>
+      </div>
+      <div class="column" id="centerItems">
+        <h2 class="right">
+          june 2019
+        </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreTopHeight" src="assets/project/map.jpg" alt="Screenshot of the Minimap Webpage"></img>
+        </div>
+      </div>
+        <div class="column">
+          <h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            This small project was an experimental project exploring the concept of canvases of multiple types (2D and 3D)
+            Utilizing the p5.js libraries, I used 100% self taught Javascript implement this test. 
+            Upon development of this portfolio, I migrated the project into a repo on GitHub to serve it under my .tech domain
+          </h3>
+          <ul>
+            Skills:
+            <li>Javascript (p5.js Libraries)</li>
+            <li>HTML</li>
+          </ul>
+          <button class="linkButtonStyleA" >
+            <a id="linkColor" href="https://minimap.erich-m.tech/" target="_blank">
+              Click To View Project
+            </a>
+          </button>
+        </div>
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
@@ -523,14 +650,39 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Avoid.io
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          may 2019
         </h2>
       </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreTopHeight" src="assets/project/avoid.jpg" alt="Screenshot of the Avoid.io Webpage"></img>
+        </div>
+      </div>
+        <div class="column">
+          <h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            This was my second major Javascript programming project. 
+            Utilizing the p5.js libraries, I used 100% self taught Javascript to create a working game. 
+            Upon development of this portfolio, I migrated the project into a repo on GitHub to serve it under my .tech domain
+          </h3>
+          <ul>
+            Skills:
+            <li>Javascript (p5.js Libraries)</li>
+            <li>HTML</li>
+          </ul>
+          <button class="linkButtonStyleA" >
+            <a id="linkColor" href="https://avoid-io.erich-m.tech/" target="_blank">
+              Click To View Project
+            </a>
+          </button>
+        </div>
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
@@ -542,13 +694,33 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Drone
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          may 2019
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          The image on the right shows a drone model.
+          This design was the second iteration of a previous design that had encapsulated the entire circuitry of the drone.
+          Due to excessive weight and motor wiring issues, the frame had to be redesigned to be much lighter and smaller.
+        </h3>
+        <ul>
+          Skills:
+          <li>3D Modelling (Inventor)</li>
+          <li>3D Printing</li>
+        </ul>
+      </div>
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/3d4.jpg" alt="3D Drone Model"></img>
+        </div>
       </div>
     </div>
   </div>
@@ -561,13 +733,42 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Rube Goldberg Machine
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          may 15, 2019
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          This project explored more miscellaneous design skills and creative thinking.
+          The objective was to explore different mechanical systems, and use them to perform a task.
+          In this case, the task was to launch a model rocket.
+        </h3>
+        <ul>
+          Skills:
+          <li>Design Prcess</li>
+          <li>Creative Thinking</li>
+          <li>Misc Tech Skills</li>
+        </ul>
+        <ul>
+          Special Thanks to Team Members
+          <li>
+            <a id="linkColor" href="https://www.linkedin.com/in/talhamrao" target="_blank">
+              Talha R
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <video class="halfImageIgnoreHeight" src="assets/project/rube1.mp4" alt="Rube Goldberg Machine" controls muted controlsList="nodownload"></video>
+        </div>
       </div>
     </div>
   </div>
@@ -580,14 +781,39 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          SpaceAttack.io
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          june 2018
         </h2>
       </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreTopHeight" src="assets/project/attack.jpg" alt="Screenshot of the SpaceAttack.io Webpage"></img>
+        </div>
+      </div>
+        <div class="column">
+          <h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            This project was the beginning of my programming journey.
+            Using the Khan Academy Javascript libraries, I developed a video game for a final project in grade 11.
+            All of the Javascript was self taught.
+          </h3>
+          <ul>
+            Skills:
+            <li>Javascript (Khan Academy Libraries)</li>
+            <li>HTML</li>
+          </ul>
+          <button class="linkButtonStyleA" >
+            <a id="linkColor" href="https://memorymaster.erich-m.tech/" target="_blank">
+              Click To View Project
+            </a>
+          </button>
+        </div>
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
@@ -599,13 +825,46 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Soapbox Derby Car
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          june 2018
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          For this project, I had to design a soapbox derby car, that would function with provided wheels and axles.
+          There were numerous challenges that I had to work through.
+          The front of the car had to be designed so that the wheels would have a wide turning radius.
+          I also wanted the steering column to be on an angle, which required modification to the standard pulley system.
+          I then had to recreate the model in Autodesk Inventor
+        </h3>
+      </div>
+      <div class="column" id="centerItems">
+        <ul>
+          Skills:
+          <li>3D Modelling (Inventor)</li>
+          <li>3D Assembly (Inventor)</li>
+          <li>Design Process</li>
+          <li>Misc Tech Skills</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/sbc0.jpg" alt="3D Rocket Model"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/sbc1.jpg" alt="3D Rocket Model"></img>
+        </div>
       </div>
     </div>
   </div>
@@ -614,36 +873,80 @@
     <hr class="regBreakB">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="contentStyleB" id="content5">
+  <div class="contentStyleA" id="content5">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          AT-AT Model
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          june 2018
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/3d3.jpg" alt="AT-AT Model"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          For this project, I had to create a figurine model that used at minimum, a ball and socket joint.
+          However I challenged myself to replicate an AT-AT from the Star Wars franchise.
+          The legs are the most complex portion, containing 11 pieces per leg.
+          The design uses two identical halves that can clip onto each other to hold a rotating joint in place.
+          I learned a lot from completing this project.
+          If I were to do this project again, I would attempt to trace an image to ensure the body was set to scale, and I would also reduce the size of the overall model as well.
+        </h3>
+        <ul>
+          Skills:
+          <li>3D Modelling (Inventor)</li>
+          <li>3D Printing</li>
+          <li>3D Assembly (Inventor)</li>
+        </ul>
       </div>
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
-  <div class="breakContainerB">
-    <hr class="regBreakB">
+  <div class="breakContainerA">
+    <hr class="regBreakA">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
   <div class="contentStyleB" id="content4">
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Magnet Car
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          feb 2018
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/3d2.jpg" alt="3D Rocket Model"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          The image on the left shows a levitating magnet car.
+          Designed to fit into a track, propeller drives the car forward until it hits a button at the end of the track.
+          Due to some measurement discrepancies, an extra piece had to be designed to better fit the magnets and ensure the car was tighter in the track itself.
+        </h3>
+        <ul>
+          Skills:
+          <li>3D Modelling (Inventor)</li>
+          <li>3D Printing</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -656,13 +959,33 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Catapult
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          may 2017
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/cat.jpg" alt="Catapult"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          For this project, the objective was to design a catapult that would launch a projectile into a bucket over a certain distance.
+          The catapult that I had originally designed had a high degree of customization for the catapult launch properties, such as the number of elastics and the positioning of the base.
+          However I had to redesign some of the parts due to the size and strength of the materials
+        </h3>
+        <ul>
+          Skills:
+          <li>Design Process</li>
+          <li>Woodworking</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -675,13 +998,42 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Rube Goldberg Machine
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          oct 2016
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          This project explored more miscellaneous design skills and creative thinking.
+          The task was to create a set of linking contraptions to pop a water balloon.
+          The machine also had to link from previous Rube Goldberg devices, while also containing a theme for the design
+        </h3>
+        <ul>
+          Skills:
+          <li>Design Prcess</li>
+          <li>Creative Thinking</li>
+          <li>Misc Tech Skills</li>
+        </ul>
+        <ul>
+          Special Thanks to Team Members
+          <li>
+            <a id="linkColor" href="https://www.linkedin.com/in/tia-van-der-gulik-3aa6ab204" target="_blank">
+              Tia V
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <video class="halfImageIgnoreHeight" src="assets/project/rube0.mp4" alt="Rube Goldberg Machine" controls muted controlsList="nodownload"></video>
+        </div>
       </div>
     </div>
   </div>
@@ -694,13 +1046,32 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          Model Rocket
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          may 2016
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/3d1.jpg" alt="3D Rocket Model"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          This model rocket was designed following a set of given dimensions, with some custom addons, such as the fins for alignment.
+          The rocket was then laoded with a fuel cell and was sucessfully launched and recovered.
+        </h3>
+        <ul>
+          Skills:
+          <li>3D Modelling (Inventor)</li>
+          <li>3D Printing</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -713,19 +1084,74 @@
     <div class="row" id="centerRow">
       <div class="column" id="centerItems">
         <h1>
-          Photorealistic Animation
+          TIE Fighter Model
         </h1>
       </div>
       <div class="column" id="centerItems">
         <h2 class="right">
-          apr 2021
+          dec 2015
         </h2>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/3d0.jpg" alt="3D TIE Fighter Model"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          This project was my the beginning of my technological design journey.
+          It gave me my start on a path toward engineering.
+          Comparing this model with my work in the present day, there is evident growth in my modelling skills and my technical skills altogether.
+        </h3>
+        <ul>
+          Skills:
+          <li>3D Modelling (Inventor)</li>
+          <li>3D Printing</li>
+        </ul>
       </div>
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
   <div class="breakContainerB">
     <hr class="regBreakB">
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------ -->
+  <div class="contentStyleA" id="content-1">
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <h1>
+          Who Am I
+        </h1>
+      </div>
+    </div>
+    <div class="row" id="centerRow">
+      <div class="column" id="centerItems">
+        <div class="halfImageContainer">
+          <img class="halfImageIgnoreHeight" src="assets/project/profile.jpg" alt="Contact Photo"></img>
+        </div>
+      </div>
+      <div class="column" id="centerItems">
+        <h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          My name is Erich MacLean. 
+          I am a university student, and an aspiring computer engineer. 
+          With supervisor experience, I demonstrate strong customer service skills. 
+          Currently studying computer engineering at the University of Guelph, my skills include Java and C, as well as JavaScript, which I taught myself at an intermediate level. 
+          I also excel at 3D modelling using Solidworks and other CAD tools. 
+          I have had the opportunity to compete in provincial and national coding competitions in high school, as well as receiving multiple tech based awards in my graduating year. 
+          I also obtained my associate level Mechanical Design certificate through Solidworks. 
+          I am always working to improve upon my skills in engineering and am keen on learning new skills. 
+          In my spare time, I love to do kung fu and go on bike rides
+        </h3>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------ -->
+  <div class="breakContainerA">
+    <hr class="regBreakA">
   </div>
   <!------------------------------------------------------------------------------------------------------------------ -->
 </body>
