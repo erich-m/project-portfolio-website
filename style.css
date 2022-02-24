@@ -22,6 +22,8 @@ html, body {
   overflow-x : hidden;
   margin : 0px;
   padding : 0px;
+
+  scroll-behavior: smooth;
 }
 
 
@@ -35,6 +37,10 @@ html, body {
   src: url("assets/bodyfont.ttf");
 }
 
+@font-face {
+  font-family: "mainFont";
+  src: url("assets/mainfont.ttf");
+}
 
 .header {
   font-family: "headerFont";
@@ -57,7 +63,7 @@ html, body {
   top : 0;
   left : 0;
 
-  width : 33.33333%;
+  width : 50%;
   height : 10vh;
 
   padding : 0;
@@ -68,9 +74,9 @@ html, body {
   color : var(--contrast-text);
   position : absolute;
   top : 0;
-  left : 66.66666%;
+  left : 50%;
 
-  width : 33.33333%;
+  width : 50%;
   height : 10vh;
 
   padding : 0;
@@ -95,6 +101,7 @@ button {
   border : none;
   padding : 0;
   cursor : pointer;
+  border-radius : 5px;
 }
 
 .headButt {
@@ -188,4 +195,208 @@ button {
 
   width : 100%;
   height : 50%;
+}
+
+
+.contentStyleA{
+  background-color : var(--contrast-text);
+  color : var(--background-color);
+  
+  display : block;
+  
+  position : flex;
+  left : 0;
+  
+  width : 100%;
+  
+  padding : none;
+  
+  margin : none;
+}
+
+.contentStyleB{
+  background-color : var(--light-accent);
+  color : black;
+
+  display : block;
+
+  position : flex;
+  left : 0;
+
+  width : 100%;
+  
+  padding : none;
+
+  margin : none;
+}
+
+h1{
+  font-family : mainFont;
+  font-size : clamp(1.7rem,3vw,120rem);
+
+  padding-left : 5%;
+  padding-right : 5%;
+  margin : none;
+
+  font-weight : bolder;
+  text-decoration : underline;
+}
+
+h2{
+  position : relative;
+  font-family : bodyFont;
+  font-size : clamp(1.25rem,1.5vw,100rem);
+
+  padding-left : 5%;
+  padding-right : 5%;
+  margin : none;
+}
+
+.left{
+  text-align : left;
+}
+
+.right{
+  text-align : right;
+}
+h3{
+  background-color : inherit;
+  font-family : mainFont;
+  font-size : clamp(1.25rem,1.5vw,100rem);
+
+  padding-left : 7%;
+  padding-right : 5%;
+  margin : none;
+}
+
+ul{
+  background-color : inherit;
+  font-family : mainFont;
+  font-size : clamp(1.25rem,1.5vw,100rem);
+
+  padding-left : 10%;
+  padding-right : 5%;
+  margin : none;
+}
+
+img {
+  background-color : inherit;
+}
+
+.halfImage{
+  border : black 3px solid;
+  width : auto;
+  margin : 5%;
+  max-height : 75vh;
+  max-width : 90%;
+}
+
+.halfImageIgnoreHeight{
+  border : black 3px solid;
+  width : auto;
+  margin-left : 5%;
+  margin-right : 5%;
+  max-height : 75vh;
+  max-width : 90%;
+}
+
+.halfImageContainer{
+  width : 90%;
+  display : flex;
+  justify-content: center;
+}
+
+.fullImage{
+  border : black 3px solid;
+  width : auto;
+  margin : 5%;
+  max-height : 75vh;
+  max-width : 90%;
+}
+
+.fullImageIgnoreHeight{
+  border : black 3px solid;
+  width : auto;
+  margin-left : 5%;
+  margin-right : 5%;
+  max-height : 75vh;
+  max-width : 90%;
+}
+
+.fullImageContainer{
+  width : 100%;
+  display : flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  margin : none;
+}
+.column {
+  flex: 50%;
+  margin : none;
+}
+
+#centerRow{
+  align-items : center;
+}
+
+.linkButtonStyleA{
+  background-color : var(--back-accent);
+  padding : 2%;
+  position : relative;
+  left : 50%;
+  transform : translate(-50%);
+
+  border-radius : 10px;
+
+  font-family : headerFont;
+  font-size : clamp(0rem,1.5vw,20rem);
+
+  border : black solid 3px;
+}
+
+.linkButtonStyleA:hover{
+  background-color : var(--back--accent-offset);
+}
+
+.whitespace{
+  background-color : var(--light-accent);
+  border : none;
+
+  margin-top : calc(60vh);
+}
+
+.regBreakA{
+  margin : 0px;
+  padding-top : 20px;
+  background-color : var(--contrast-text);
+  border : var(--contrast-text);
+  border-bottom : black 5px solid;
+  padding : none;
+}
+
+.regBreakB{
+  margin : 0px;
+  background-color : var(--light-accent);
+  border : var(--light-accent);
+  border-bottom : black 5px solid;
+  padding : none;
+}
+
+.breakContainerA{
+  margin : none;
+  background-color : var(--contrast-text);
+  padding : 1%;
+}
+
+.breakContainerB{
+  margin : none;
+  background-color : var(--light-accent);
+  padding : 1%;
+}
+
+#linkColor{
+  color : black;
 }
