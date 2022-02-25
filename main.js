@@ -52,11 +52,11 @@ function setup() {
 	backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
 	textColor = getComputedStyle(document.documentElement).getPropertyValue('--contrast-text');
 
-	points = nameFont.textToPoints("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
-	textBox = nameFont.textBounds("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
+	points = nameFont.textToPoints("Erich",cnv.width*0.7,cnv.height/2,windowWidth/4,CENTER,CENTER);
+	textBox = nameFont.textBounds("Erich",cnv.width*0.7,cnv.height/2,windowWidth/4,CENTER,CENTER);
 
 	for(let p = 0;p < points.length;p++){
-		let newPoint = new customPoint(points[p].x,points[p].y,-cnv.width/2,textBox.h/2,random(0.1,3));
+		let newPoint = new customPoint(points[p].x,points[p].y,-cnv.width*0.62,textBox.h/2,random(0.1,3));
 		points[p] = newPoint;
 	}
 }
@@ -112,11 +112,11 @@ function windowResized() {
 	cnv = createCanvas(windowWidth,windowHeight*0.509);
 	cnv.position(0,headerSize.height);
 
-	points = nameFont.textToPoints("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
-	textBox = nameFont.textBounds("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
+	points = nameFont.textToPoints("Erich",cnv.width*0.7,cnv.height/2,windowWidth/4,CENTER,CENTER);
+	textBox = nameFont.textBounds("Erich",cnv.width*0.7,cnv.height/2,windowWidth/4,CENTER,CENTER);
 
 	for(let p = 0;p < points.length;p++){
-		let newPoint = new customPoint(points[p].x,points[p].y,-cnv.width/2,textBox.h/2,random(0.1,3));
+		let newPoint = new customPoint(points[p].x,points[p].y,-cnv.width*0.62,textBox.h/2,random(0.1,3));
 		points[p] = newPoint;
 	}
 }
