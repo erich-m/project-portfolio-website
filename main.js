@@ -43,8 +43,8 @@ function preload(){
 
 function setup() {
 	let headerSize = (document.getElementById("header")).getBoundingClientRect();
-	let canvasSize = (document.getElementById("mainPage")).getBoundingClientRect();
-	cnv = createCanvas(canvasSize.width, canvasSize.height);
+	// let canvasSize = (document.getElementById("mainPage")).getBoundingClientRect();
+	cnv = createCanvas(windowWidth,windowHeight*0.509);
 	cnv.position(0,headerSize.height);
 
 	mode = round(random(0,1));
@@ -98,7 +98,9 @@ function draw(){
 
 		for(let i = 0;i < points.length;i++){
 			points[i].render();
-			points[i].update(2);
+			if(mouseX >= 0 && mouseX <= windowWidth && mouseY >= 0 && mouseY <= cnv.height){
+				points[i].update(2);
+			}
 		}
 	}
 }
@@ -106,8 +108,8 @@ function draw(){
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 	let headerSize = (document.getElementById("header")).getBoundingClientRect();
-	let canvasSize = (document.getElementById("mainPage")).getBoundingClientRect();
-	cnv = createCanvas(canvasSize.width, canvasSize.height);
+	// let canvasSize = (document.getElementById("mainPage")).getBoundingClientRect();
+	cnv = createCanvas(windowWidth,windowHeight*0.509);
 	cnv.position(0,headerSize.height);
 
 	points = nameFont.textToPoints("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
