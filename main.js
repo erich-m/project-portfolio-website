@@ -2,14 +2,18 @@ let cnv;
 let backgroundColor;
 let textColor;
 
-let mode = 0;
+let mode = 1;
 let counter = 0;
 let change = 0.5;
 
 let nameFont;
 
 let toggleAnimation = 1;
-let center, r;
+let center
+let r;
+
+let points; 
+let textBox;
 
 function preload(){
 	nameFont = loadFont("assets/headerfont.ttf");
@@ -42,10 +46,19 @@ function setup() {
 	let canvasSize = (document.getElementById("mainPage")).getBoundingClientRect();
 	cnv = createCanvas(canvasSize.width, canvasSize.height);
 	cnv.position(0,headerSize.height);
-	
 
+	mode = round(random(0,1));
+	
 	backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
 	textColor = getComputedStyle(document.documentElement).getPropertyValue('--contrast-text');
+
+	points = nameFont.textToPoints("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
+	textBox = nameFont.textBounds("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
+
+	for(let p = 0;p < points.length;p++){
+		let newPoint = new customPoint(points[p].x,points[p].y,-cnv.width/2,textBox.h/2,random(0.1,3));
+		points[p] = newPoint;
+	}
 }
 
 function draw(){
@@ -78,6 +91,15 @@ function draw(){
 		textFont(nameFont);
 		textAlign(CENTER,CENTER);
 		text("Erich",cnv.width*0.7,cnv.height/2);
+	}else if(mode == 1){
+		fill(0);
+		stroke(textColor);
+		strokeWeight(11);
+
+		for(let i = 0;i < points.length;i++){
+			points[i].render();
+			points[i].update(2);
+		}
 	}
 }
 
@@ -87,6 +109,14 @@ function windowResized() {
 	let canvasSize = (document.getElementById("mainPage")).getBoundingClientRect();
 	cnv = createCanvas(canvasSize.width, canvasSize.height);
 	cnv.position(0,headerSize.height);
+
+	points = nameFont.textToPoints("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
+	textBox = nameFont.textBounds("Erich",cnv.width*0.7,cnv.height/2,windowWidth/6,CENTER,CENTER);
+
+	for(let p = 0;p < points.length;p++){
+		let newPoint = new customPoint(points[p].x,points[p].y,-cnv.width/2,textBox.h/2,random(0.1,3));
+		points[p] = newPoint;
+	}
 }
 
 
@@ -114,9 +144,11 @@ function drawArc(startAngle,endAngle,mid,dist,x,y,r,col){
 }
 
 function mousePressed(){
-	if(dist(mouseX,mouseY,center.x,center.y) <= r){
-		toggleAnimation *= -1;
+	if(mode == 0){
+		if(dist(mouseX,mouseY,center.x,center.y) <= r){
+			toggleAnimation *= -1;
+		}
+	
+		change*=toggleAnimation;
 	}
-
-	change*=toggleAnimation;
 }
