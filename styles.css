@@ -164,3 +164,31 @@ h3 {
     background-size: 100px 100px, 100px 100px;
     background-color: var(--bg-primary);
 }
+
+.bg-crosses {
+    background: radial-gradient(circle, transparent 20%, var(--bg-primary) 20%, var(--bg-primary) 80%, transparent 80%, transparent) 0% 0% / 40px 40px, radial-gradient(circle, transparent 20%, var(--bg-primary) 20%, var(--bg-primary) 80%, transparent 80%, transparent) 20px 20px / 40px 40px, linear-gradient(var(--bg-secondary) 1.5px, transparent 1.5px) 0px -0.75px / 20px 20px, linear-gradient(90deg, var(--bg-secondary) 1.5px, var(--bg-primary) 1.5px) -0.75px 0px / 20px 20px var(--bg-primary);
+    background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+    background-color: var(--bg-primary);
+}
+
+.bg-plusses {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(1*10px) calc(3*10px),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(2*10px) calc(1*10px),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(3*10px) calc(4*10px),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(4*10px) calc(2*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) 0 calc(4*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(1*10px) calc(2*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(2*10px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(3*10px) calc(3*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(4*10px) calc(1*10px),
+      var(--bg-primary);
+    background-size: 50px 50px;
+}
+
+.bg-tablecloth {
+    background: repeating-linear-gradient(transparent, transparent 7.75px, var(--bg-secondary) 7.75px, var(--bg-secondary) 11.625px, transparent 11.625px, transparent 15.5px, var(--bg-secondary) 11.625px, var(--bg-secondary) 31px, transparent 31px, transparent 34.875px, var(--bg-secondary) 34.875px, var(--bg-secondary) 38.75px, transparent 38.75px, transparent 62px), repeating-linear-gradient(90deg, transparent, transparent 7.75px, #161621 7.75px, var(--bg-secondary) 11.625px, transparent 11.625px, transparent 15.5px, var(--bg-secondary) 11.625px, var(--bg-secondary) 31px, transparent 31px, transparent 34.875px, var(--bg-secondary) 34.875px, var(--bg-secondary) 38.75px, transparent 38.75px, transparent 62px), var(--bg-primary);
+    background-blend-mode: multiply;
+    background-color: var(--bg-primary);
+}
