@@ -12,25 +12,24 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-98GFJSKC5R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
-
     gtag('config', 'G-98GFJSKC5R');
   </script>
-
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       // Track LinkedIn clicks
-      document.querySelector('a[title="Linkedin - Erich MacLean"]').addEventListener('click', function () {
+      document.querySelector('a[title="Linkedin - Erich MacLean"]').addEventListener('click', function() {
         gtag('event', 'click', {
           'event_category': 'social_links',
           'event_label': 'LinkedIn',
           'value': 1
         });
       });
-
       // Track GitHub clicks
-      document.querySelector('a[title="Github - Erich MacLean"]').addEventListener('click', function () {
+      document.querySelector('a[title="Github - Erich MacLean"]').addEventListener('click', function() {
         gtag('event', 'click', {
           'event_category': 'social_links',
           'event_label': 'GitHub',
@@ -39,7 +38,6 @@
       });
     });
   </script>
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const backgrounds = [
@@ -54,12 +52,10 @@
         'bg-plusses',
         'bg-tablecloth'
       ];
-      
       const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
       document.body.classList.add(randomBg);
     });
   </script>
-
   <body>
     <div class="left-content">
       <h1><u>ERICH MACLEAN</u></h1>
@@ -69,7 +65,6 @@
         <a title="Github - Erich MacLean" href="https://github.com/erich-m" target="_blank">Github</a>
       </h3>
     </div>
-
     <div class="right-content">
       <img src="assets/alpha/EM_main.jpg" alt="Image of Erich MacLean by the University of Guelph sign">
     </div>
