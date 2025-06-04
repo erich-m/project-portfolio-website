@@ -2,52 +2,57 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M19BBBSY59"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-M19BBBSY59');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Erich M : Tech Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="assets\alpha\EM_logo.ico">
+  <link rel="icon" type="image/x-icon" href="assets/alpha/EM_logo.ico">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M19BBBSY59"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M19BBBSY59');
-</script>
 
 <body>
   <div class="left-content">
     <h1>ERICH MACLEAN</h1>
-    <h2>B. Eng (Computer) - 2023; MASc. Eng (AI) Candiadate - 2025</h2>
-    <h3><a title="Linkedin - Erich MacLean"href="https://www.linkedin.com/in/erich-maclean-575549193" target="_blank">Linkedin</a> | <a title="Github - Erich MacLean" href="https://github.com/erich-m" target="_blank">Github</a></h3>
+    <h2>B. Eng (Computer) - 2023; MASc. Eng (AI) Candidate - 2025</h2>
+    <h3>
+      <a title="Linkedin - Erich MacLean" href="https://www.linkedin.com/in/erich-maclean-575549193" target="_blank">Linkedin</a> |
+      <a title="Github - Erich MacLean" href="https://github.com/erich-m" target="_blank">Github</a>
+    </h3>
   </div>
+
   <div class="right-content">
-    <img src="assets\alpha\EM_main.jpg" alt="Image of Erich MacLean by the University of Guelph sign">
+    <img src="assets/alpha/EM_main.jpg" alt="Image of Erich MacLean by the University of Guelph sign">
   </div>
 
-    <script>
-        // Track LinkedIn clicks
-        document.querySelector('a[title="Linkedin - Erich MacLean"]').addEventListener('click', function() {
-            gtag('event', 'click', {
-                'event_category': 'social_links',
-                'event_label': 'LinkedIn',
-                'value': 1
-            });
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Track LinkedIn clicks
+      document.querySelector('a[title="Linkedin - Erich MacLean"]').addEventListener('click', function () {
+        gtag('event', 'click', {
+          'event_category': 'social_links',
+          'event_label': 'LinkedIn',
+          'value': 1
         });
+      });
 
-        // Track GitHub clicks
-        document.querySelector('a[title="Github - Erich MacLean"]').addEventListener('click', function() {
-            gtag('event', 'click', {
-                'event_category': 'social_links',
-                'event_label': 'GitHub',
-                'value': 1
-            });
+      // Track GitHub clicks
+      document.querySelector('a[title="Github - Erich MacLean"]').addEventListener('click', function () {
+        gtag('event', 'click', {
+          'event_category': 'social_links',
+          'event_label': 'GitHub',
+          'value': 1
         });
-    </script>
+      });
+    });
+  </script>
 </body>
 
 </html>
