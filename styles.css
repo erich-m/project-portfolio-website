@@ -82,6 +82,23 @@ h3 {
   }
 }
 
+@media screen and (orientation: portrait) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  .left-content {
+    width: 100%;
+    height: 60vh;
+    padding: 2rem;
+  }
+
+  .right-content {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
 .bg-rooms {
   background: conic-gradient(from -116.36deg at 25% 75%,var(--bg-primary) 52.72deg,#0000 0),
       conic-gradient(from -116.36deg at 25% 75%,var(--bg-primary) 52.72deg,#0000 0) calc(3*32px) calc(32px/2),
