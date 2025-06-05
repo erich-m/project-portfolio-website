@@ -1,0 +1,28 @@
+{
+  "personalInfo": {
+    "name": "ERICH MACLEAN",
+    "title": "B. Eng (Computer) - 2023; MASc. Eng (AI) Candidate - 2025",
+    "socialLinks": {
+      "linkedin": {
+        "title": "LinkedIn - Erich MacLean",
+        "url": "https://www.linkedin.com/in/erich-maclean-575549193"
+      },
+      "github": {
+        "title": "GitHub - Erich MacLean",
+        "url": "https://github.com/erich-m"
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "profile": {
+        "src": "assets/alpha/EM_main.jpg",
+        "alt": "Image of Erich MacLean by the University of Guelph sign"
+      },
+      "logo": {
+        "src": "assets/alpha/EM_logo.ico",
+        "type": "image/x-icon"
+      }
+    }
+  }
+}
