@@ -209,9 +209,9 @@ h3 {
     transition: color 0.3s ease;
 }
 
-#trigger-firework:hover {
+/* #trigger-firework:hover {
     color: #fff;
-}
+} */
 
 #firework-canvas {
     position: fixed;
