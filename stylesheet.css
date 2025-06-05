@@ -202,3 +202,23 @@ h3 {
   background-blend-mode: multiply;
   background-color: var(--bg-primary);
 }
+
+#trigger-firework {
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+#trigger-firework:hover {
+    color: #fff;
+}
+
+#firework-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
