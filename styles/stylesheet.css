@@ -49,7 +49,12 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: right top; /* Changed from 'top center' to 'right top' */
+}
+
+/* Add specific positioning for bio page */
+body[data-page-type="bio"] .image-content img {
+  object-position: top center; /* Keep center alignment for bio page */
 }
 
 h1 {
