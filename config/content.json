@@ -5,7 +5,7 @@
     "links": {
       "bio": {
         "title": "Erich's Bio",
-        "url": "biography.html"
+        "url": "/biography"
       },
       "linkedin": {
         "title": "LinkedIn - Erich MacLean",
