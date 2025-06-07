@@ -1,0 +1,104 @@
+
+.bg-rooms {
+  background: conic-gradient(from -116.36deg at 25% 75%,var(--bg-primary) 52.72deg,#0000 0),
+      conic-gradient(from -116.36deg at 25% 75%,var(--bg-primary) 52.72deg,#0000 0) calc(3*32px) calc(32px/2),
+      conic-gradient(from   63.43deg at 75% 75%,var(--bg-primary) 52.72deg,#0000 0),
+      conic-gradient(from   63.43deg at 75% 75%,var(--bg-primary) 52.72deg,#0000 0) calc(3*32px) calc(32px/2),
+      conic-gradient(
+        #000000   63.43deg ,var(--bg-secondary) 0 116.36deg,
+        #000000 0 180deg   ,var(--bg-secondary) 0 243.43deg,
+        #000000 0 296.15deg,var(--bg-secondary) 0);
+  background-size: 64px 32px;
+}
+
+.bg-shurikens {
+  background: radial-gradient(32px at calc(100% + calc(32px*.866)) 50%,var(--bg-secondary) 99%, #0000 101%) 0 calc(-5*32px/2),
+      radial-gradient(32px at calc(100% + calc(32px*.866)) 50%,var(--bg-secondary) 99%, #0000 101%) calc(-2*calc(32px*.866)) calc(32px/2),
+      radial-gradient(32px at 100% 50%,var(--bg-primary) 99%, #0000 101%) 0 calc(-2*32px),
+      radial-gradient(32px,var(--bg-secondary) 99%, #0000 101%) calc(32px*.866) calc(-5*32px/2),
+      radial-gradient(32px,var(--bg-primary) 99%, #0000 101%) calc(32px*.866) calc( 5*32px/2),
+      radial-gradient(32px at 100% 100%,var(--bg-secondary) 99%, #0000 101%) 0 calc(-1*32px),   
+      radial-gradient(32px at 0%   50% ,var(--bg-secondary) 99%, #0000 101%) 0 calc(-4*32px),
+      radial-gradient(32px,var(--bg-primary) 99%, #0000 101%) calc(-1*calc(32px*.866)) calc(-7*32px/2),
+      radial-gradient(32px,var(--bg-secondary) 99%, #0000 101%) calc(-1*calc(32px*.866)) calc(-5*32px/2),
+      radial-gradient(32px at 100% 50%,var(--bg-primary) 99%, #0000 101%) calc(-2*calc(32px*.866)) 32px,
+      radial-gradient(32px,var(--bg-secondary) 99%, #0000 101%) calc(-1*calc(32px*.866)) calc(32px/ 2),
+      radial-gradient(32px,var(--bg-primary) 99%, #0000 101%) calc(-1*calc(32px*.866)) calc(32px/-2),
+      radial-gradient(32px,var(--bg-secondary) 99%, #0000 101%) 0 calc(-1*32px),
+      radial-gradient(32px,var(--bg-primary) 99%, #0000 101%) calc(32px*.866) calc(32px/-2),
+      radial-gradient(32px,var(--bg-secondary) 99%, #0000 101%) calc(32px*.866) calc(32px/ 2) 
+      var(--bg-primary);
+  background-size: calc(4*calc(32px*.866)) calc(6*32px);
+}
+
+.bg-cubes {
+  background-image: linear-gradient(30deg, var(--bg-tertiary) 12%, transparent 12.5%, transparent 87%, var(--bg-tertiary) 87.5%, var(--bg-tertiary)),
+      linear-gradient(150deg, var(--bg-tertiary) 12%, transparent 12.5%, transparent 87%, var(--bg-tertiary) 87.5%, var(--bg-tertiary)),
+      linear-gradient(30deg, var(--bg-tertiary) 12%, transparent 12.5%, transparent 87%, var(--bg-tertiary) 87.5%, var(--bg-tertiary)),
+      linear-gradient(150deg, var(--bg-tertiary) 12%, transparent 12.5%, transparent 87%, var(--bg-tertiary) 87.5%, var(--bg-tertiary)),
+      linear-gradient(60deg, rgba(22,22,33,0.5) 25%, transparent 25.5%, transparent 75%, rgba(22,22,33,0.5) 75%, rgba(22,22,33,0.5)),
+      linear-gradient(60deg, rgba(22,22,33,0.5) 25%, transparent 25.5%, transparent 75%, rgba(22,22,33,0.5) 75%, rgba(22,22,33,0.5));
+  background-size: 50px 87.5px;
+  background-position: 0 0, 0 0, 25px 43.75px, 25px 43.75px, 0 0, 25px 43.75px;
+  background-color: var(--bg-primary);
+}
+
+.bg-buildings {
+  background: conic-gradient(from -60deg at 50% calc(100%/3),var(--bg-primary) 0 120deg,#0000 0),
+      conic-gradient(from 120deg at 50% calc(200%/3),var(--bg-primary) 0 120deg,#0000 0),
+      conic-gradient(from  60deg at calc(200%/3),var(--bg-primary) 60deg,var(--bg-tertiary) 0 120deg,#0000 0),
+      conic-gradient(from 180deg at calc(100%/3),var(--bg-secondary) 60deg,var(--bg-primary) 0 120deg,#0000 0),
+      linear-gradient(90deg,var(--bg-secondary) calc(100%/6),var(--bg-tertiary) 0 50%,
+      var(--bg-secondary) 0 calc(500%/6), var(--bg-tertiary) 0);
+  background-size: 87px 50px;
+}
+
+.bg-nested-cubes {
+  background: conic-gradient(from 0deg at calc(500%/6) calc(100%/3),var(--bg-tertiary) 0 120deg,#0000 0),
+      conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--bg-secondary) 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(100%/3) calc(500%/6),var(--bg-primary) 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(200%/3) calc(500%/6),var(--bg-primary) 0 120deg,#0000 0),
+      conic-gradient(from -180deg at calc(100%/3) 50%,var(--bg-secondary)  60deg,var(--bg-primary) 0 120deg,#0000 0),
+      conic-gradient(from 60deg at calc(200%/3) 50%,var(--bg-primary)  60deg,var(--bg-tertiary) 0 120deg,#0000 0),
+      conic-gradient(from -60deg at 50% calc(100%/3),var(--bg-primary) 120deg,var(--bg-secondary) 0 240deg,var(--bg-tertiary) 0);
+  background-size: 187px 108px;
+}
+
+.bg-diamonds {
+  background: conic-gradient(var(--bg-secondary) 30deg,var(--bg-tertiary) 0 75deg, var(--bg-secondary) 0 90deg, var(--bg-primary) 0 105deg, var(--bg-tertiary) 0 150deg, var(--bg-primary) 0 180deg,var(--bg-tertiary) 0 210deg, var(--bg-secondary) 0 256deg, var(--bg-primary) 0 270deg,var(--bg-secondary) 0 286deg, var(--bg-primary) 0 331deg,var(--bg-tertiary) 0);
+  background-size: 54px calc(54px/0.577);
+}
+
+.bg-squiggles {
+  background: radial-gradient(at bottom right, var(--bg-tertiary) 0, var(--bg-tertiary) 12.5px, #16162133 12.5px, #16162133 25px, #161621bf 25px, #161621bf 37.5px, #16162140 37.5px, #16162140 50px, #1616214d 50px, #1616214d 62.5px, #161621bf 62.5px, #161621bf 75px, #16162133 75px, #16162133 87.5px, transparent 87.5px, transparent 100px), radial-gradient(at top left, transparent 0, transparent 12.5px, #16162133 12.5px, #16162133 25px, #161621bf 25px, #161621bf 37.5px, #1616214d 37.5px, #1616214d 50px, #16162140 50px, #16162140 62.5px, #161621bf 62.5px, #161621bf 75px, #16162133 75px, #16162133 87.5px, var(--bg-tertiary) 87.5px, var(--bg-tertiary) 100px, transparent 100px, transparent 250px);
+  background-blend-mode: multiply;
+  background-size: 100px 100px, 100px 100px;
+  background-color: var(--bg-primary);
+}
+
+.bg-crosses {
+  background: radial-gradient(circle, transparent 20%, var(--bg-primary) 20%, var(--bg-primary) 80%, transparent 80%, transparent) 0% 0% / 40px 40px, radial-gradient(circle, transparent 20%, var(--bg-primary) 20%, var(--bg-primary) 80%, transparent 80%, transparent) 20px 20px / 40px 40px, linear-gradient(var(--bg-secondary) 1.5px, transparent 1.5px) 0px -0.75px / 20px 20px, linear-gradient(90deg, var(--bg-secondary) 1.5px, var(--bg-primary) 1.5px) -0.75px 0px / 20px 20px var(--bg-primary);
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+  background-color: var(--bg-primary);
+}
+
+.bg-plusses {
+  background: conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(1*10px) calc(3*10px),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(2*10px) calc(1*10px),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(3*10px) calc(4*10px),
+      conic-gradient(at 10% 50%,#0000 75%,var(--bg-secondary) 0) calc(4*10px) calc(2*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) 0 calc(4*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(1*10px) calc(2*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(2*10px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(3*10px) calc(3*10px),
+      conic-gradient(at 50% 10%,#0000 75%,var(--bg-secondary) 0) calc(4*10px) calc(1*10px),
+      var(--bg-primary);
+  background-size: 50px 50px;
+}
+
+.bg-tablecloth {
+  background: repeating-linear-gradient(transparent, transparent 7.75px, var(--bg-secondary) 7.75px, var(--bg-secondary) 11.625px, transparent 11.625px, transparent 15.5px, var(--bg-secondary) 11.625px, var(--bg-secondary) 31px, transparent 31px, transparent 34.875px, var(--bg-secondary) 34.875px, var(--bg-secondary) 38.75px, transparent 38.75px, transparent 62px), repeating-linear-gradient(90deg, transparent, transparent 7.75px, #161621 7.75px, var(--bg-secondary) 11.625px, transparent 11.625px, transparent 15.5px, var(--bg-secondary) 11.625px, var(--bg-secondary) 31px, transparent 31px, transparent 34.875px, var(--bg-secondary) 34.875px, var(--bg-secondary) 38.75px, transparent 38.75px, transparent 62px), var(--bg-primary);
+  background-blend-mode: multiply;
+  background-color: var(--bg-primary);
+}

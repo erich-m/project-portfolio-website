@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Track LinkedIn clicks
-    document.querySelector('a[title="Linkedin - Erich MacLean"]').addEventListener('click', function() {
+    document.getElementById('linkedin-link').addEventListener('click', function() {
         gtag('event', 'click', {
             'event_category': 'social_links',
             'event_label': 'LinkedIn',
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Track GitHub clicks
-    document.querySelector('a[title="Github - Erich MacLean"]').addEventListener('click', function() {
+    document.getElementById('github-link').addEventListener('click', function() {
         gtag('event', 'click', {
             'event_category': 'social_links',
             'event_label': 'GitHub',

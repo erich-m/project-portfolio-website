@@ -6,6 +6,7 @@
     <title>Erich M : Tech Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/alpha/EM_logo.ico">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="bg-styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-98GFJSKC5R"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -19,11 +20,15 @@
     <script src="scripts/backgroundSelector.js"></script>
     <script src="scripts/contentLoader.js"></script>
   </head>
-  <body>
-    <div id="left-content" class="left-content">
+  <body data-page-type="home">
+    <div id="text-content" class="text-content">
       <h1 id="name">ERICH MACLEAN</h1>
       <h2 id="title">B. Eng (Computer) - 2023; MASc. Eng (AI) Candidate - 2025</h2>
-      <h3 id="social-links">
+      <h3 id="links">
+        <a id="bio-link"
+           title="Erich's Bio"
+           href="biography.html"
+           target="_self">About</a> |
         <a id="linkedin-link" 
            title="LinkedIn - Erich MacLean" 
            href="https://www.linkedin.com/in/erich-maclean-575549193" 
@@ -34,7 +39,7 @@
            target="_blank">GitHub</a>
       </h3>
     </div>
-    <div id="right-content" class="right-content">
+    <div id="image-content" class="image-content">
       <img id="profile-image" 
            src="assets/alpha/EM_main.jpg" 
            alt="Image of Erich MacLean by the University of Guelph sign">

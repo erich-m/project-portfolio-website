@@ -2,7 +2,11 @@
   "personalInfo": {
     "name": "ERICH MACLEAN",
     "title": "B. Eng (Computer) - 2023; MASc. Eng (AI) Candidate - 2025",
-    "socialLinks": {
+    "links": {
+      "bio": {
+        "title": "Erich's Bio",
+        "url": "biography.html"
+      },
       "linkedin": {
         "title": "LinkedIn - Erich MacLean",
         "url": "https://www.linkedin.com/in/erich-maclean-575549193"
@@ -12,6 +16,9 @@
         "url": "https://github.com/erich-m"
       }
     }
+  },
+  "bioInfo": {
+    "title": "Biography"
   },
   "assets": {
     "images": {
